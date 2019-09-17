@@ -1,16 +1,16 @@
 #include <math.h> 
 #include <stdio.h> 
 
-// A utility function to print an array of size n 
-void printArray(int arr[], int n) 
-{ 
+// Funcion para imprimir el array
+void printArray(int arr[], int n) { 
 	int i; 
 	for (i = 0; i < n; i++) 
 		printf("%d ", arr[i]); 
 	printf("\n"); 
 }
 
-void lastSort(int arr[], int m){
+// Funcion para ordenar el ultimo elemento m
+void lastSort(int arr[], int m) {
 	int i, key, j; 
 	for (i = 1; i < m; i++) { 
 		key = arr[i]; 
@@ -27,10 +27,9 @@ void lastSort(int arr[], int m){
 	} 
 	printArray(arr, m);
 }
-/* Function to sort an array using insertion sort*/
-void insertionSort(int arr[], int n) 
-{ 
-	
+
+// Funcion que define el limite m para la funcion lastSort()
+void insertionSort(int arr[], int n) {
 	int i; 
 	for (i = 2; i <= n; i++) {
 		lastSort(arr, i);
@@ -38,8 +37,8 @@ void insertionSort(int arr[], int n)
 } 
 
 /* Driver program to test insertion sort */
-int main() 
-{ 
+int main() { 
+	
 	int arr[] = { 12, 11, 13, 5, 6 }; 
 	int n = sizeof(arr) / sizeof(arr[0]); 
 	
@@ -54,4 +53,4 @@ int main()
 	printArray(arr, n); 
 	
 	return 0; 
-} 
+}
