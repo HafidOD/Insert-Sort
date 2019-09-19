@@ -10,7 +10,7 @@ void printArray(int arr[], int n);
 /* Driver program to test insertion sort */
 int main() 
 { 
-	int arr[] = { 12, 11, 13, 5, 6 }; 
+	int arr[] = {4, 3, 2, 10, 12, 1, 5, 6 }; 
 	int n = sizeof(arr) / sizeof(arr[0]); 
 	
 	printf("Array original:\n");
@@ -85,4 +85,4 @@ void printArray(int arr[], int n)
 	for (i = 0; i < n; i++) 
 		printf("%d\t", arr[i]); 
 	printf("\n\n"); 
-} 
+}
