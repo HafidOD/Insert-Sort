@@ -47,5 +47,7 @@ int main() {
 	printf("\nArray Ordenado:\n");
 	printArray(arr, n); 
 	
+	getchar();
+	
 	return 0; 
 }
